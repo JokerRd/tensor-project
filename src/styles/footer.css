@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E6EDD5;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
