@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск сообществ ВК</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/result-card.css">
+    <link rel="stylesheet" href="styles/search-sidebar.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img class="logo_img" src="img/logo_vk.svg" alt="Логотип Вк">
+    </div>
+    <h1 class="title_text">
+        Поиск сообществ Вконтакте
+    </h1>
+</header>
+<div class="main">
+    <aside class="sidebar">
+        <h2 class="sidebar_title">
+            Параметры поиска
+        </h2>
+        <form class="search-form">
+            <div class="search-form_element">
+                <label class="search-form_element_label" for="search_input">
+                    Поиск сообществ
+                </label>
+                <input class="search-form_element_input" id="search_input">
+            </div>
+            <div class="search-form_element">
+                <label class="search-form_element_label" for="type_groups">Тип сообщества</label>
+                <select class="search-form_element_input" id="type_groups">
+                    <option selected>Страница</option>
+                    <option>Группа</option>
+                    <option>Событие</option>
+                </select>
+            </div>
+            <div class="search-form_element">
+                <label class="search-form_element_label" for="country">Страна</label>
+                <select class="search-form_element_input" id="country">
+                    <option selected>Россия</option>
+                    <option>Азербайджан</option>
+                </select>
+            </div>
+            <div class="search-form_element">
+                <label class="search-form_element_label" for="city">Город</label>
+                <select class="search-form_element_input" id="city">
+                    <option selected>Москва</option>
+                    <option>Екатеринбург</option>
+                </select>
+            </div>
+            <div class="search-form_element">
+                <label class="search-form_element_label" for="sort">Сортировка</label>
+                <select class="search-form_element_input" id="sort">
+                    <option selected>По релевантности</option>
+                    <option>По количеству участников</option>
+                </select>
+            </div>
+            <div class="search-form_element">
+                <label class="search-form_element_label" for="count_result">Количество результатов</label>
+                <input class="search-form_element_input search-form_element_input_number" id="count_result"
+                       type="number" min="1" max="1000">
+            </div>
+            <div class="search-form_element">
+                <button class="search-form_button" type="submit">Поиск</button>
+            </div>
+        </form>
+    </aside>
+    <section class="result-search border">
+        <h2 class="result-search_title">
+            Результаты поиска
+        </h2>
+        <div class="cards">
+            <div class="card border">
+                <img class="card_cover card_element" src="img/logo_vk.svg" alt="Картинка">
+                <section class="card-about card_element">
+                    <h4>Моя группа</h4>
+                    <p>Юмор</p>
+                    <p>500 подписчиков</p>
+                </section>
+                <section class="card_element">
+                    <h4>Описание</h4>
+                    <p>
+                        Длинннннннннннннннннннннннннннннннннннннннннннннный тееееееееееееееееееееееееееееееееееееееекст
+                    </p>
+                </section>
+            </div>
+            <div class="card">
+                <img class="card_cover card_element" src="img/logo_vk.svg" alt="Картинка">
+                <section class="card-about card_element">
+                    <h4>Моя группа</h4>
+                    <p>Юмор</p>
+                    <p>500 подписчиков</p>
+                </section>
+                <section class="card_element">
+                    <h4>Описание</h4>
+                    <p>
+                        Длинннннннннннннннннннннннннннннннннннннннннннннный тееееееееееееееееееееееееееееееееееееееекст
+                    </p>
+                </section>
+            </div>
+            <div class="card">
+                <img class="card_cover card_element" src="img/logo_vk.svg" alt="Картинка">
+                <section class="card_about card_element">
+                    <h4>Моя группа</h4>
+                    <p>Юмор</p>
+                    <p>500 подписчиков</p>
+                </section>
+                <section class="card_element">
+                    <h4>Описание</h4>
+                    <p>
+                        Длинннннннннннннннннннннннннннннннннннннннннннннный тееееееееееееееееееееееееееееееееееееееекст
+                    </p>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <a class="social-link" href="https://vk.com/vakonkov">
+        <img class="social-icon" src="img/logo_vk.svg" alt="Вконтакте">
+        <span>Вконтакте</span>
+    </a>
+    <a class="social-link" href="https://t.me/vakonkov">
+        <img class="social-icon" src="img/logo_tg.svg" alt="Вконтакте">
+        <span>Телеграмм</span>
+    </a>
+</footer>
+</body>
+</html>
